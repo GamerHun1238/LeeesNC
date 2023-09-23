@@ -19,8 +19,8 @@ public class LeeesNC extends JavaPlugin implements Listener {
         Bukkit.getServer().getPluginCommand("nc").setExecutor(new NCCommand());
         Bukkit.getServer().getPluginCommand("nc").setTabCompleter(new NCCommand());
 
-        Bukkit.getServer().getPluginCommand("ic").setExecutor(new ICComand());
-        Bukkit.getServer().getPluginCommand("ic").setTabCompleter(new ICComand());
+        //Bukkit.getServer().getPluginCommand("ic").setExecutor(new ICComand());
+        //Bukkit.getServer().getPluginCommand("ic").setTabCompleter(new ICComand());
 
         getServer().getConsoleSender().sendMessage(prefix + "Finished loading! :)");
     }
