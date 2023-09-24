@@ -1537,7 +1537,7 @@ public class NCCommand implements CommandExecutor, TabExecutor {
 
                 String newname = builder.toString();
 
-                player.spigot().sendMessage(new TextComponent(ChatColor.BLUE + "--------------------------------------------"));
+                player.spigot().sendMessage(new TextComponent(ChatColor.GOLD + "--------------------------------------------"));
                 player.spigot().sendMessage(new TextComponent(ChatColor.GOLD + "LeeesNC"));
                 player.spigot().sendMessage(new TextComponent(ChatColor.GOLD + "/nc <colour> <type-colour>"));
                 player.spigot().sendMessage(new TextComponent(ChatColor.GOLD + "/nc reset to reset your name"));
@@ -1549,7 +1549,7 @@ public class NCCommand implements CommandExecutor, TabExecutor {
                 player.spigot().sendMessage(new ComponentBuilder("").color(ChatColor.GOLD).append("red ").color(ChatColor.RED).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc red")).append("dark-red ").color(ChatColor.DARK_RED).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc dark-red")).append("green ").color(ChatColor.GREEN).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc green")).append("dark-green ").color(ChatColor.DARK_GREEN).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc dark-green")).append(newname).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc rainbow")).append("").color(ChatColor.GOLD).create());
                 player.spigot().sendMessage(new ComponentBuilder("").color(ChatColor.GOLD).append("blue ").color(ChatColor.BLUE).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc blue")).append("dark-blue ").color(ChatColor.DARK_BLUE).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc dark-blue")).append("gold ").color(ChatColor.GOLD).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc gold")).append("yellow ").color(ChatColor.YELLOW).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc yellow")).append("black").color(ChatColor.BLACK).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc black")).append("").color(ChatColor.GOLD).create());
                 player.spigot().sendMessage(new ComponentBuilder("").color(ChatColor.GOLD).append("purple ").color(ChatColor.DARK_PURPLE).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc purple")).append("pink ").color(ChatColor.LIGHT_PURPLE).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc pink")).append("gray ").color(ChatColor.GRAY).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc gray")).append("aqua ").color(ChatColor.AQUA).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc aqua")).append("dark-aqua ").color(ChatColor.DARK_AQUA).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc dark-aqua")).append("white").color(ChatColor.WHITE).event(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/nc white")).append("").color(ChatColor.GOLD).create());
-                player.spigot().sendMessage(new TextComponent(ChatColor.BLUE + "--------------------------------------------"));
+                player.spigot().sendMessage(new TextComponent(ChatColor.GOLD + "--------------------------------------------"));
                 return true;
             }
         }
