@@ -20,8 +20,9 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
-    - name: Upload JAR files
-      uses: actions/upload-artifact@v2
-      with:
-        name: artifacts
-        path: target/*.jar  # You can adjust the path to match your JAR files
+    - name: Upload JAR files to release
+      run: |
+        mv target/LeeesNC-*.jar $GITHUB_WORKSPACE/LeeesNC.jar
+        gh release upload ${{ github.repository }} $GITHUB_WORKSPACE/LeeesNC.jar --clobber
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
